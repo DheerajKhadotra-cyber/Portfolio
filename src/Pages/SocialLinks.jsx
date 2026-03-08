@@ -32,7 +32,7 @@ const SocialLinks = () => {
   ];
 
   return (
-    <section id="SocialLnks" className="flex items-center gap-6">
+    <section id="SocialLnks" className="flex items-center pb-10 pl-16 gap-6">
       {socials.map((social, index) => (
         <motion.a
           key={index}

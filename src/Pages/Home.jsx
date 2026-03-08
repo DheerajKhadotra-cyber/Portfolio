@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import {motion} from 'motion/react'
-import sabstand from "../assets/sabstand.png"
+import Dheeraj from "../assets/Dheeraj.png"
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <section id="Home"className='h-screen flex  items-center justify-center '>
-      <div className='h-full w-4/9 bg-slate-50 text-white p-16 flex flex-col justify-center space-y-4'>
+      <div className='h-full md:w-4/9 bg-slate-50 text-white p-16 flex flex-col justify-center space-y-4'>
       <motion.span 
        initial ={{opacity:0 , y:-200}}
        animate={{opacity:1 ,y:0}}
@@ -100,21 +100,22 @@ const Home = () => {
 
 
 
-      <div className='h-full w-5/9 bg-gradient-to-br from -[#0f172a]  to-[#1e293b] relative flex items-center justify-center overflow-hidden'>
+      <div className='h-full md:w-5/9 bg-gradient-to-br  relative flex items-center justify-center overflow-hidden'>
       </div>
-      <div className='absolute right-32 w-[500px] h-[500px] bg-red-600  rounded-full -z-10 blur-3xl opacity-40 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900'>
+      
+      <div className='absolute right-32 w-[500px] h-[500px]  rounded-full -z-10 blur-3xl opacity-40 bg-gradient-to-r '>
       </div>
       
       <motion.img
-      
+     
       animate={{y:[0, -20 , 0]}}
       transition={{
         duration:4,
         repeat:Infinity,
         ease:"easeInOut"
+         
       }}
-      className='absolute right-30 -bottom-3 md:w-[600px] w-[100px] drop-shadow-2xl' src={sabstand} alt="hero" />
-      
+      className='absolute right-30 bottom-30 md:w-[600px] w-[200px]  drop-shadow-2xl' src={Dheeraj} alt="hero" />
       {/* <div className='absolute -bottom-45'>
         <div className=' bg-red-600 w-40 h-40 rounded-full'>
 
