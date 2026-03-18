@@ -10,7 +10,7 @@ const Home = () => {
 
 
   return (
-    <section id="Home"className='h-screen flex  items-center justify-center '>
+    <section id="Home"className='h-screen flex -mt-30 md:-mt-0 items-center justify-center '>
       <div className='h-full md:w-4/9 bg-slate-50 text-white p-16 flex flex-col justify-center space-y-4'>
       <motion.span 
        initial ={{opacity:0 , y:-200}}
@@ -42,7 +42,7 @@ const Home = () => {
          '>
          {"DHEERAJ_    ".split("").map((letter,index)=>(
                          <motion.span
-                         id='Shona'
+                         id=''
                              key={index}
                              className="inline-block cursor-pointer bg-gradient-to-t from-indigo-500 to-blue-300 bg-clip-text text-transparent"
          
@@ -115,7 +115,7 @@ const Home = () => {
         ease:"easeInOut"
          
       }}
-      className='absolute right-30 bottom-30 md:w-[600px] w-[200px]  drop-shadow-2xl' src={Dheeraj} alt="hero" />
+      className='absolute right-20 bottom-40 md:bottom-30 md:w-[600px] w-[200px]  drop-shadow-2xl' src={Dheeraj} alt="hero" />
       {/* <div className='absolute -bottom-45'>
         <div className=' bg-red-600 w-40 h-40 rounded-full'>
 
