@@ -57,10 +57,12 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
+           
           className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full"
         >
           <motion.div
             variants={cardVariants}
+            whileHover={{ y: -15 }}
             className="p-8 bg-white rounded-3xl shadow-xl border border-indigo-50"
           >
             <h3 className="text-xl font-bold text-indigo-600 mb-4">
@@ -73,6 +75,7 @@ const About = () => {
 
           <motion.div
             variants={cardVariants}
+            whileHover={{ y: -15 }}
             className="p-8 bg-white rounded-3xl shadow-xl border border-indigo-50"
           >
             <h3 className="text-xl font-bold text-indigo-600 mb-4">
@@ -85,6 +88,7 @@ const About = () => {
 
           <motion.div
             variants={cardVariants}
+            whileHover={{ y: -15 }}
             className="p-8 bg-white rounded-3xl shadow-xl border border-indigo-50"
           >
             <h3 className="text-xl font-bold text-indigo-600 mb-4">

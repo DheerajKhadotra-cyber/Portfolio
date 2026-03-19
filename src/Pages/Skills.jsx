@@ -21,7 +21,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
+              whileHover={{ y: -15 }}
               className="p-8 bg-white rounded-3xl shadow-xl border border-slate-100 group"
             >
               <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${skill.color} to-white mb-6 flex items-center justify-center text-3xl shadow-lg`}>
